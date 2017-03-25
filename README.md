@@ -1,4 +1,4 @@
-## sampleterrain - Update coordinates of a GeoJSON file with sampled elevation data from [Cesium Terrain Provider](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) from node.js
+## sampleterrain - Update coordinates of a GeoJSON file from node.js with sampled elevation data from [Cesium Terrain Provider](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html)
 
 When you work with [Cesium](https://cesiumjs.org/), often times you need to incorporate elevation data in your geo features so that they are properly positioned relative to the ground when using terrain visualization. You can do it in the browser by invoking the [Cesium.sampleTerrain](https://cesiumjs.org/Cesium/Build/Documentation/sampleTerrain.html) function, but if your features have tons of coordinates, it will be very slow. Most of the time it will be much better to preprocess the data off-line to include elevation information. This small library allows you to do that from a node.js application.
 
