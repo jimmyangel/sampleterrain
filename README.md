@@ -1,4 +1,4 @@
-## sampleterrain - Update coordinates of a GeoJSON file with sampled elevation data from [Cesium Terrain Provider](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html)
+## sampleterrain - Update coordinates of a GeoJSON file with sampled elevation data from [Cesium Terrain Provider](https://cesiumjs.org/data-and-assets/terrain/stk-world-terrain.html) from node.js
 
 ### As library
 
