@@ -22,6 +22,11 @@ sampleterrain.sample(data, level, function(err, result) {
   }
 });
 
+Where:
+	data - GeoJSON object
+	level - The terrain level-of-detail from which to sample terrain heights (default 11)
+	result - Update GeoJSON object
+
 ```
 
 ### Use from the command line
@@ -31,7 +36,7 @@ Usage:
   sampleterrain.js [OPTIONS] [ARGS]
 
 Options: 
-  -f, --file FILE        GeoJson File
+  -f, --file FILE        GeoJSON File
   -l, --level [NUMBER]   Terrain level of detail (Default is 11)
   -h, --help             Display help and usage details
 ```
