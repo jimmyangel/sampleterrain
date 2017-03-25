@@ -1,0 +1,29 @@
+{
+  "name": "sampleterrain",
+  "version": "0.1.0",
+  "description": "sampleterrain",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "geojson",
+    "cesium",
+    "terrain",
+    "elevation"
+  ],
+  "author": "Ricardo Morin",
+  "license": "MIT",
+  "dependencies": {
+    "cesium": "git+https://github.com/jimmyangel/cesium.git#lhxr-build",
+    "cli": "^1.0.1",
+    "traverse": "^0.6.6"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.3",
+    "mocha": "^3.0.2"
+  }
+}
