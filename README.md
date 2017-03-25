@@ -6,7 +6,7 @@ Caveat: Cesium.js does not currently support invoking Cesium.sampleTerrain from 
 
 ### Install
 ```
-npm install https://github.com/jimmyangel/sampleterrain.git
+npm install sampleterrain
 ```
 
 ### Use as library
