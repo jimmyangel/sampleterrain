@@ -27,4 +27,7 @@ Options:
   -h, --help             Display help and usage details
 ```
 
-### Examples
+### Example
+```
+node sampleterrain.js -f ./sampledata/test1.json -l 11 > sampled.json
+```
