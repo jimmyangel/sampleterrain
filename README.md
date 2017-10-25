@@ -14,7 +14,7 @@ npm install sampleterrain
 ```
 var sampleterrain = require('sampleterrain');
 
-sampleterrain.sample(data, level, function(err, result) {
+sampleterrain.sample(data, function(err, result) {
   if (err) {
     console.log(err)
   } else {
@@ -24,7 +24,6 @@ sampleterrain.sample(data, level, function(err, result) {
 
 Where:
 	data - GeoJSON object
-	level - The terrain level-of-detail from which to sample terrain heights (default 11)
 	result - Update GeoJSON object
 
 ```
@@ -37,11 +36,10 @@ Usage:
 
 Options: 
   -f, --file FILE        GeoJSON File
-  -l, --level [NUMBER]   Terrain level of detail (Default is 11)
   -h, --help             Display help and usage details
 ```
 
 ### Example
 ```
-node sampleterrain.js -f ./sampledata/test1.json -l 11 > sampled.json
+node sampleterrain.js -f ./sampledata/test1.json  > sampled.json
 ```
