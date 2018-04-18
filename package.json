@@ -1,6 +1,6 @@
 {
   "name": "sampleterrain",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "sampleterrain",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,7 @@
   "author": "Ricardo Morin",
   "license": "MIT",
   "dependencies": {
-    "cesium": "git+https://github.com/jimmyangel/cesium.git#lhxr-build",
+    "cesium": "git+https://github.com/jimmyangel/cesium.git#loadWithHttpRequest-build",
     "cli": "^1.0.1",
     "traverse": "^0.6.6"
   },
