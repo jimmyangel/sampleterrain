@@ -16,14 +16,6 @@ npm install sampleterrain
 ```
 var sampleterrain = require('sampleterrain');
 
-sampleterrain.sample(data, function(err, result) {
-  if (err) {
-    console.log(err)
-  } else {
-    console.log(result);
-  }
-});
-
 sampleterrain.sample(data, fOptions).then((result) => {
   console.log(JSON.stringify(result));
 }).catch(e => {
