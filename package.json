@@ -21,6 +21,7 @@
   "dependencies": {
     "cesium": "git+https://github.com/jimmyangel/cesium.git#loadWithHttpRequest-build",
     "cli": "^1.0.1",
+    "geojson-validation": "^0.2.0",
     "traverse": "^0.6.6"
   },
   "devDependencies": {
