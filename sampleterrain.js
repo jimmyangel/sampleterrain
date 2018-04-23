@@ -4,6 +4,8 @@ const cli = require('cli');
 const sampleterrain = require('./lib/');
 const fs = require('fs');
 
+let start = new Date();
+
 console.warn('Sampling terrain...');
 
 let options = cli.parse({
@@ -21,6 +23,7 @@ if (options.file) {
   fs.readFile(options.file, 'utf8', (err, data) => {
     if (err) {throw err;}
     sampleterrain.sample(JSON.parse(data), fOptions).then((o) => {
+      console.warn('Terrain sampled...', new Date() - start);
       console.log(JSON.stringify(o));
     }).catch(e => {
       console.warn('Sample terrain error', e);
