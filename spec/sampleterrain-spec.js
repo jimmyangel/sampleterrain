@@ -7,6 +7,10 @@ describe('my test suite',function(){
     sampleterrain.sample(geojson).then(function(result) {
       expect(result.features[0].geometry.coordinates[0].length).toEqual(3);
       done();
+    }).catch(function(e) {
+      expect(e).toBeFalsy();
+      console.log(e);
+      done();
     });
   });
 
@@ -15,6 +19,10 @@ describe('my test suite',function(){
     sampleterrain.sample(geojson, {terrainProviderUrl: 'http://assets.agi.com/stk-terrain/world/'}).then(function(result) {
       expect(result.features[0].geometry.coordinates[0].length).toEqual(3);
       done();
+    }).catch(function(e) {
+      expect(e).toBeFalsy();
+      console.log(e);
+      done();
     });
   });
 
@@ -22,6 +30,10 @@ describe('my test suite',function(){
     var geojson = require('../sampledata/test3.json');
     sampleterrain.sample(geojson, {level: 6}).then(function(result) {
       expect(result.features[0].geometry.coordinates[0][0].length).toEqual(3);
+      done();
+    }).catch(function(e) {
+      expect(e).toBeFalsy();
+      console.log(e);
       done();
     });
   });
