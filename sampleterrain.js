@@ -1,25 +1,29 @@
 'use strict';
 
-var cli = require('cli');
-var sampleterrain = require('./lib/');
-var fs = require('fs');
+const cli = require('cli');
+const sampleterrain = require('./lib/');
+const fs = require('fs');
+
+let start = new Date();
 
 console.warn('Sampling terrain...');
 
-var options = cli.parse({
+let options = cli.parse({
     file: ['f', 'GeoJson File', 'file'],
     level: ['l', 'Terrain level of detail', 'int'],
     url: ['u', 'Terrain provider url', 'url']
 });
 
+let fOptions;
 if (options.level || options.url) {
-  var fOptions = {level: options.level, terrainProviderUrl: options.url};
+  fOptions = {level: options.level, terrainProviderUrl: options.url};
 }
 
 if (options.file) {
-  fs.readFile(options.file, 'utf8', function(err, data) {
+  fs.readFile(options.file, 'utf8', (err, data) => {
     if (err) {throw err;}
     sampleterrain.sample(JSON.parse(data), fOptions).then((o) => {
+      console.warn('Terrain sampled...', new Date() - start, 'ms');
       console.log(JSON.stringify(o));
     }).catch(e => {
       console.warn('Sample terrain error', e);
