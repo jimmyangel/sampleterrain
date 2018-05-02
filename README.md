@@ -4,7 +4,7 @@ When you work with [Cesium](https://cesiumjs.org/), often times you need to inco
 
 This small library allows you to do that from a node.js application.
 
-Caveat: Cesium.js does not currently support invoking Cesium.sampleTerrain from a node.js application. I have created a [branch](https://github.com/jimmyangel/cesium/tree/loadWithHttpRequest) (and a [pull request](https://github.com/AnalyticalGraphicsInc/cesium/pull/6454)) to include such support. While this functionality makes it into the official Cesium release, npm install will get [this](https://github.com/jimmyangel/cesium/tree/loadWithHttpRequest-build) branch from my repo.
+Performance note: For large files, it is better to explicitly specify level of detail as the default 'sampleTerrainMostDetailed' can be very slow.
 
 ### Install
 ```
