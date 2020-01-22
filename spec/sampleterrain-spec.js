@@ -14,18 +14,6 @@ describe('my test suite',function(){
     });
   });
 
-  it('should add elevation coordinates to a json file with long/lat using a valid terrain provider url', function(done) {
-    var geojson = require('../sampledata/test1.json');
-    sampleterrain.sample(geojson, {terrainProviderUrl: 'http://assets.agi.com/stk-terrain/world/'}).then(function(result) {
-      expect(result.features[0].geometry.coordinates[0].length).toEqual(3);
-      done();
-    }).catch(function(e) {
-      expect(e).toBeFalsy();
-      console.log(e);
-      done();
-    });
-  });
-
   it('should add elevation coordinates to a large GeoJSON json file with long/lat', function(done) {
     var geojson = require('../sampledata/test3.json');
     sampleterrain.sample(geojson, {level: 6}).then(function(result) {
