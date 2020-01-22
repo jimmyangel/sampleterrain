@@ -19,13 +19,13 @@
   "author": "Ricardo Morin",
   "license": "MIT",
   "dependencies": {
-    "cesium": "^1.45.0",
+    "cesium": "jimmyangel/cesium#master-build",
     "cli": "^1.0.1",
     "geojson-validation": "^0.2.0",
     "traverse": "^0.6.6"
   },
   "devDependencies": {
-    "jshint": "^2.9.3",
-    "jasmine-node": "^1.14.3"
+    "jasmine-node": "^1.14.3",
+    "jshint": "^2.11.0"
   }
 }
