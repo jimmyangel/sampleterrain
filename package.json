@@ -25,7 +25,7 @@
     "traverse": "^0.6.6"
   },
   "devDependencies": {
-    "jasmine-node": "^1.14.3",
+    "jasmine-node": "^3.0.0",
     "jshint": "^2.11.0"
   }
 }
