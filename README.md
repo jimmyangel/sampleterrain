@@ -49,7 +49,7 @@ Note: As an alternative to the ```--token``` option, set the ```CESIUM_ION_TOKEN
 
 ### Example
 ```
-node sampleterrain.js -f ./sampledata/test1.json  > sampled.json
+node sampleterrain.js -f ./sampledata/test1.json -t 'your Cesium Ion token'  > sampled.json
 ```
 
 ### Running the test suite
