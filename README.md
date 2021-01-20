@@ -29,6 +29,7 @@ Where:
   fOptions - {level: level, terrainProviderUrl: url}
               level - The terrain level-of-detail from which to sample terrain heights (defaults to maximum detail)
               url - The url of the terrain provider (default to the Cesium Ion world terrain provider)
+              token - The Cesium Ion access token (required if accessing Cesium Ion's world terrain provider)
   result - Updated GeoJSON object
 
 ```
@@ -42,10 +43,17 @@ Options:
   -f, --file FILE        GeoJson File
   -l, --level NUMBER     Terrain level of detail
   -u, --url URL          Terrain provider url
+  -t, --token STRING     Cesium Ion access token  
   -h, --help             Display help and usage details
 ```
+
+Note: As an alternative to the ```--token``` option, set the ```CESIUM_ION_TOKEN``` environment variable
 
 ### Example
 ```
 node sampleterrain.js -f ./sampledata/test1.json  > sampled.json
 ```
+
+### Running the test suite
+
+Running the test suite (npm run test) requires the ```CESIUM_ION_TOKEN``` environment variable to be set with a valid access token.

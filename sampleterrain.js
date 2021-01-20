@@ -11,12 +11,15 @@ console.warn('Sampling terrain...');
 let options = cli.parse({
     file: ['f', 'GeoJson File', 'file'],
     level: ['l', 'Terrain level of detail', 'int'],
-    url: ['u', 'Terrain provider url', 'url']
+    url: ['u', 'Terrain provider url', 'url'],
+    token: ['t', 'Cesium Ion access token', 'string']
 });
 
+options.token = options.token ? options.token : process.env.CESIUM_ION_TOKEN
+
 let fOptions;
-if (options.level || options.url) {
-  fOptions = {level: options.level, terrainProviderUrl: options.url};
+if (options.level || options.url || options.token) {
+  fOptions = {level: options.level, terrainProviderUrl: options.url, token: options.token};
 }
 
 if (options.file) {
