@@ -6,8 +6,6 @@ This small library allows you to do that from a node.js application.
 
 Performance note: For large files, it is better to explicitly specify level of detail as the default 'sampleTerrainMostDetailed' can be very slow.
 
-**NOTE:** Currently Cesium has an issue running in Node.js applications. The dependencies have been temporarily updated to point to Cesium branch in jimmyangel/cesium repo. See Cesium [issue 8559](https://github.com/AnalyticalGraphicsInc/cesium/issues/8559)
-
 ### Install
 ```
 npm install sampleterrain

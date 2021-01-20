@@ -1,6 +1,6 @@
 {
   "name": "sampleterrain",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "sampleterrain",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,7 @@
   "author": "Ricardo Morin",
   "license": "MIT",
   "dependencies": {
-    "cesium": "jimmyangel/cesium#master-build",
+    "cesium": "^1.77.0",
     "cli": "^1.0.1",
     "geojson-validation": "^0.2.0",
     "traverse": "^0.6.6"
